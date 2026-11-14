@@ -1,0 +1,22 @@
+name: Validate detection rules
+
+on:
+  push:
+  pull_request:
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+      - name: Validate detection definitions
+        run: python -m src.validate_rules
+      - name: Test validation and payload generation
+        run: python -m unittest discover -s tests -v
