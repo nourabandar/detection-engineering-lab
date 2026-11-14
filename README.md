@@ -2,7 +2,6 @@
 
 A hands-on detection engineering lab with structured detection rules, local validation, and optional rule synchronization to Elastic Security.
 
-> **Project provenance:** This repository is a new reconstruction of a detection engineering workflow. It draws on my previous hands-on lab experience and the general approach demonstrated by [isherwood-sec/detection-engineering](https://github.com/isherwood-sec/detection-engineering). The source code here was newly written for this repository; it is **not a copy** of the original repository.
 
 ## Overview
 
@@ -55,7 +54,7 @@ The sync command defaults to a preview. It only writes to Elastic when you pass 
 
 ## Attribution
 
-Reference implementation and inspiration: [isherwood-sec/detection-engineering](https://github.com/isherwood-sec/detection-engineering) by **isherwood-sec**. No source files from that repository have been copied into this one. The reference repository did not declare a software license when checked, so reuse of its exact files requires permission from the original author.
+Reference implementation and inspiration: [isherwood-sec/detection-engineering](https://github.com/isherwood-sec/detection-engineering) by **isherwood-sec**.
 
 ## Status
 
