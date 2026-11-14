@@ -1,0 +1,11 @@
+# Educational example only. Verify field names against your data source.
+rule_id = "local-demo-suspicious-powershell"
+name = "Demo - Suspicious PowerShell Encoded Command"
+description = "Educational query for PowerShell command lines with an encoded-command flag."
+index = ["winlogbeat-*"]
+language = "kuery"
+query = "process.name : \"powershell.exe\" and process.command_line : *-enc*"
+severity = "low"
+risk_score = 21
+tags = ["Lab", "Windows", "PowerShell"]
+enabled = false
